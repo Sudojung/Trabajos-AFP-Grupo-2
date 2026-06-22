@@ -1,4 +1,4 @@
-Algoritmos pares_impares_multiplos5
+Algoritmo pares_impares_multiplos5
 	Definir n, i Como Entero
 	Definir suma_pares, suma_impares, suma_multp5 Como Entero
 	
