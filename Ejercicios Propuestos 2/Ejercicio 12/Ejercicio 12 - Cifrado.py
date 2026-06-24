@@ -4,14 +4,15 @@ GROUP = 2
 # Solicitamos un número de 4 dígitos
 numero = input("Ingrese un número de 4 dígitos: ")
 
-# Extraemos y transformamos cada dígito
-d1 = (int(numero[0]) + 7) % 10
-d2 = (int(numero[1]) + 7) % 10
-d3 = (int(numero[2]) + 7) % 10
-d4 = (int(numero[3]) + 7) % 10
+# Arreglo para almacenar los dígitos cifrados
+digitos = [0] * 4
+
+# Convertimos y ciframos cada dígito
+for i in range(4):
+    digitos[i] = (int(numero[i]) + 7) % 10
 
 # Intercambiamos posiciones
-cifrado = f"{d3}{d4}{d1}{d2}"
+cifrado = f"{digitos[2]}{digitos[3]}{digitos[0]}{digitos[1]}"
 
-# Mostramos el resultado final
+# Mostramos el resultado
 print(f"Número cifrado: {cifrado}")
