@@ -1,10 +1,8 @@
-```pseint id="m8s4qp"
 Algoritmo Encuestados
-
     Definir totalPersonas, totalAceptanA, totalAceptanB Como Entero
     Definir aceptanAmbos, aceptanSoloA, aceptanSoloB, noAceptanNinguno Como Entero
     Definir respuestaA, respuestaB Como Entero
-    Definir i Como Entero    // Variable contadora para el ciclo
+    Definir i Como Entero
 
     totalAceptanA <- 0
     totalAceptanB <- 0
@@ -17,7 +15,6 @@ Algoritmo Encuestados
     Leer totalPersonas
 
     Para i <- 1 Hasta totalPersonas Con Paso 1 Hacer
-
         Escribir "--- Encuesta N° ", i, " ---"
 
         Escribir "¿Acepta el producto A? (1=Sí, 0=No): "
@@ -49,31 +46,20 @@ Algoritmo Encuestados
         Si respuestaA = 0 Y respuestaB = 0 Entonces
             noAceptanNinguno <- noAceptanNinguno + 1
         FinSi
-
     FinPara
 
     // Reporte Final de Resultados
-
     Si totalPersonas > 0 Entonces
-
-        Escribir "----------------------------------------"
+        Escribir "===================================="
         Escribir "Total de personas encuestadas: ", totalPersonas
-
         Escribir "% Aceptan A: ", (totalAceptanA / totalPersonas) * 100, "%"
         Escribir "% Aceptan B: ", (totalAceptanB / totalPersonas) * 100, "%"
-
         Escribir "% Aceptan Ambos: ", (aceptanAmbos / totalPersonas) * 100, "%"
         Escribir "% Aceptan Solo A: ", (aceptanSoloA / totalPersonas) * 100, "%"
         Escribir "% Aceptan Solo B: ", (aceptanSoloB / totalPersonas) * 100, "%"
         Escribir "% No aceptan ninguno: ", (noAceptanNinguno / totalPersonas) * 100, "%"
-
-        Escribir "----------------------------------------"
-
+        Escribir "===================================="
     Sino
-
         Escribir "No se registraron encuestas."
-
     FinSi
-
 FinAlgoritmo
-```
