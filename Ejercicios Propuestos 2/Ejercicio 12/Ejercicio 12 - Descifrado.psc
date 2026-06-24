@@ -1,22 +1,24 @@
 Algoritmo DescifrarNumero
 
     Definir numero Como Cadena
-    Definir d1,d2,d3,d4 Como Entero
+    Definir i Como Entero
+    Definir digitos Como Entero
+    Dimension digitos[4]
 
     Escribir "Ingrese el número cifrado:"
     Leer numero
 
-    d1 <- ConvertirANumero(SubCadena(numero,2,2))
-    d2 <- ConvertirANumero(SubCadena(numero,3,3))
-    d3 <- ConvertirANumero(SubCadena(numero,0,0))
-    d4 <- ConvertirANumero(SubCadena(numero,1,1))
+    // Restaurar el orden original
+    digitos[0] <- ConvertirANumero(SubCadena(numero,2,2))
+    digitos[1] <- ConvertirANumero(SubCadena(numero,3,3))
+    digitos[2] <- ConvertirANumero(SubCadena(numero,0,0))
+    digitos[3] <- ConvertirANumero(SubCadena(numero,1,1))
 
-    d1 <- (d1 + 3) MOD 10
-    d2 <- (d2 + 3) MOD 10
-    d3 <- (d3 + 3) MOD 10
-    d4 <- (d4 + 3) MOD 10
+    // Descifrar cada dígito
+    Para i <- 0 Hasta 3 Hacer
+        digitos[i] <- (digitos[i] + 3) MOD 10
+    FinPara
 
-    Escribir "Número original: ",
-             d1,d2,d3,d4
+    Escribir "Número original: ", digitos[0], digitos[1], digitos[2], digitos[3]
 
 FinAlgoritmo
