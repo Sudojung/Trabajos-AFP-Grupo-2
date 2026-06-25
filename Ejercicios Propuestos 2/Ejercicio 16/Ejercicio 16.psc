@@ -1,19 +1,28 @@
-Algoritmo ContarDigitos
+Algoritmo CantidadDigitos
 
-    Definir N, contador Como Entero
+    Definir N, cantidad Como Entero
 
-    Escribir "Ingrese un número positivo:"
-    Leer N
+    // Validación de entrada
+    Repetir
+        Escribir "Ingrese un número entero positivo:"
+        Leer N
 
-    contador <- 0
+        Si N <= 0 Entonces
+            Escribir "Error: Debe ingresar un número positivo."
+        FinSi
 
+    Hasta Que N > 0
+
+    cantidad <- 0
+
+    // Contamos la cantidad de dígitos
     Mientras N > 0 Hacer
 
-        contador <- contador + 1
+        cantidad <- cantidad + 1
         N <- Trunc(N / 10)
 
     FinMientras
 
-    Escribir "El número tiene ", contador, " dígitos."
+    Escribir "El número tiene ", cantidad, " dígito(s)."
 
 FinAlgoritmo
