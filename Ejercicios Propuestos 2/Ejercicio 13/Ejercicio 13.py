@@ -2,23 +2,26 @@ NAME = "Renzo Leonardo Cienfuegos Cardenas"
 GROUP = 2
 
 # Creamos dos variables acumuladoras
-suma_pares = 0
-suma_impares = 0
+sumaPar = 0
+sumaImp = 0
 
-# Recorremos los números del 1 al 200
-for i in range(1, 201):
+inicio = int(input("Ingrese el número de INICIO: "))
+final = int(input("Ingrese el número de FIN: "))
 
-    # Verificamos si el número es par
+print("-" * 50)
+
+for i in range(inicio, final + 1):
+
+    # Verificar si el número es par o impar
     if i % 2 == 0:
-
-        # Acumulamos el número en la suma de pares
-        suma_pares += i
-
+        # Si el residuo es 0, es PAR
+        sumaPar += i
     else:
+        # Si el residuo no es 0, es IMPAR
+        sumaImp += i
 
-        # Acumulamos el número en la suma de impares
-        suma_impares += i
-
-# Mostramos los resultados obtenidos
-print(f"La suma de los números pares entre 1 y 200 es: {suma_pares}")
-print(f"La suma de los números impares entre 1 y 200 es: {suma_impares}")
+# Mostrar resultados
+print(f"Rango: del {inicio} al {final}")
+print(f"-> La suma total de los números PARES es: {sumaPar}")
+print(f"-> La suma total de los números IMPARES es: {sumaImp}")
+print("-" * 50)
