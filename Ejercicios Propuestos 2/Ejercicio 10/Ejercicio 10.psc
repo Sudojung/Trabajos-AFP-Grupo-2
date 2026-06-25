@@ -1,4 +1,4 @@
-Algoritmo Factorial
+Algoritmo Factoriales
     Definir n, i, factorial Como Entero
     
     // Bucle que se repite y muestra error si no es natural
