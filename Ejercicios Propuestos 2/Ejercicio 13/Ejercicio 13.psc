@@ -1,30 +1,35 @@
 Algoritmo SumaParesImpares
-
-    Definir i Como Entero
-    Definir sumaPares, sumaImpares Como Entero
-
-    // Inicializamos las variables acumuladoras
-    sumaPares <- 0
-    sumaImpares <- 0
-
-    // Recorremos los números del 1 al 200
-    Para i <- 1 Hasta 200 Con Paso 1 Hacer
-
-        // Verificamos si el número es par o impar
+    Definir inicio, final, i Como Entero
+    Definir sumaPar, sumaImp Como Entero
+    
+    sumaPar <- 0
+    sumaImp <- 0
+    
+    Escribir "Ingrese el número de INICIO:"
+    Leer inicio
+    
+    Escribir "Ingrese el número de FIN:"
+    Leer final
+    
+    Escribir "--------------------------------------------------"
+    
+    Para i <- inicio Hasta final Hacer
+        
+        // para saber si un número es par o impar
         Si i MOD 2 = 0 Entonces
-
-            sumaPares <- sumaPares + i
-
+            // Si el residuo es 0, es PAR. Lo guardamos en los pares.
+            sumaPar <- sumaPar + i 
         SiNo
-
-            sumaImpares <- sumaImpares + i
-
+            // Si el residuo no es 0, es IMPAR. Lo guardamos en los impares.
+            sumaImp <- sumaImp + i 
         FinSi
-
+        
     FinPara
-
-    // Mostramos los resultados
-    Escribir "La suma de los números pares es: ", sumaPares
-    Escribir "La suma de los números impares es: ", sumaImpares
-
+    
+    //  resultados
+    Escribir "Rango: del ", inicio, " al ", final
+    Escribir "-> La suma total de los números PARES es: ", sumaPar
+    Escribir "-> La suma total de los números IMPARES es: ", sumaImp
+    Escribir "--------------------------------------------------"
+    
 FinAlgoritmo
