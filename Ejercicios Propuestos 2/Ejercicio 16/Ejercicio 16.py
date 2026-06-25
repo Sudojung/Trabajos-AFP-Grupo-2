@@ -1,20 +1,22 @@
 NAME = "Renzo Leonardo Cienfuegos Cardenas"
 GROUP = 2
 
-# Solicitamos un número positivo
-N = int(input("Ingrese un número positivo: "))
+# Validación de entrada
+while True:
 
-# Creamos un contador para los dígitos
-contador = 0
+    n = int(input("Ingrese un número entero positivo: "))
 
-# Recorremos el número mientras sea mayor que cero
-while N > 0:
+    if n <= 0:
+        print("Error: Debe ingresar un número positivo.")
+    else:
+        break
 
-    # Incrementamos el contador de dígitos
-    contador += 1
+cantidad = 0
 
-    # Eliminamos el último dígito del número
-    N = N // 10
+# Contamos la cantidad de dígitos
+while n > 0:
 
-# Mostramos la cantidad de dígitos obtenida
-print(f"El número tiene {contador} dígitos.")
+    cantidad += 1
+    n //= 10
+
+print(f"El número tiene {cantidad} dígito(s).")
