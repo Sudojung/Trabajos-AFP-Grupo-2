@@ -2,8 +2,9 @@ Algoritmo EvaluarFuncion
 
     Definir a, b, c, d Como Real
     Definir x Como Entero
-    Definir fx Como Real
+    Definir resultado Como Real
 
+    // Ingresamos los coeficientes
     Escribir "Ingrese el valor de a:"
     Leer a
 
@@ -16,11 +17,14 @@ Algoritmo EvaluarFuncion
     Escribir "Ingrese el valor de d:"
     Leer d
 
-    Para x <- 8 Hasta 100 Con Paso 1 Hacer
+    Escribir "-----------------------------------------"
 
-        fx <- a*x^4 - b*x^3 + 2*c*x^2 - x + d
+    // Evaluamos la función para x desde 8 hasta 100
+    Para x <- 8 Hasta 100 Hacer
 
-        Escribir "f(", x, ") = ", fx
+        resultado <- a * x^4 - b * x^3 + 2 * c * x^2 - x + d
+
+        Escribir "f(", x, ") = ", resultado
 
     FinPara
 
