@@ -1,16 +1,19 @@
+
 # Algoritmo:
 
 INICIO
+
     Definir limite, i, factorial Como Entero
     Repetir
         Escribir "Ingrese un número entero positivo (mayor o igual a 1):"
         Leer limite
-        
+
         // Si el número es incorrecto, se muestra error
         Si limite < 1 Entonces
             Escribir "¡Error! El número ingresado no es válido."
             Escribir "Por favor, intente de nuevo con un número positivo."
-        FinSi
+
+     FinSi
     Hasta Que limite >= 1
     
     factorial <- 1
@@ -21,7 +24,6 @@ INICIO
         Escribir "El factorial de ", i, " es: ", factorial
     FinPara   
 FIN
-
 
 # Prueba de escritorio:
 
