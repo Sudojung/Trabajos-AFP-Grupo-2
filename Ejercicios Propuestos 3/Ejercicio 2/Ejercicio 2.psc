@@ -21,6 +21,5 @@ Algoritmo PromedioDeNotas
     
     promedio <- suma / cantidad
     
-    Escribir "La suma total es: ", suma
     Escribir "El promedio de las notas es: ", promedio
 FinAlgoritmo
