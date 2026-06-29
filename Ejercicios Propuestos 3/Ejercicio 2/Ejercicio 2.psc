@@ -12,7 +12,7 @@ Algoritmo PromedioDeNotas
     
     Escribir "Ingrese las notas una por una:"
     
-    Para i <- 0 Hasta cantidad - 1 Con Paso 1 Hacer
+    Para i <- 0 Hasta cantidad - 1  Hacer
         Escribir "Ingrese la nota para la posición ", i, ":"
         Leer vectorNotas[i]
         
