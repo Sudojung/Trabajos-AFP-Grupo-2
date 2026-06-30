@@ -32,3 +32,16 @@ FIN
 
 
 # Prueba de Escritorio:
+
+Datos de entrada:
+- cantidad = 4  
+- vectorNumeros = 5, 8, -3, 10
+
+
+| i | vectorNumeros[i] | suma antes | suma después |
+|-------|--------------------  -|----------------|------------------|
+| -     | -                     | 0              | 0                |
+| 0     | 5                     | 0              | 5                |
+| 1     | 8                     | 5              | 13               |
+| 2     | -3                    | 13             | 10               |
+| 3     | 10                    | 10             | 20               |
