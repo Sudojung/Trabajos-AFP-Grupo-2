@@ -42,17 +42,17 @@ FIN
 Datos de entrada
 - n = 3  
 
-| f | c | Condición (f == c) | Valor asignado | Elaboración de la matriz |
-|---|---|--------------------|----------------|-----------------------------|
-| 0 | 0 | Verdadero          | matriz[0,0] = 1 | [1, -, -]                   |
-| 0 | 1 | Falso              | matriz[0,1] = 0 | [1, 0, -]                   |
-| 0 | 2 | Falso              | matriz[0,2] = 0 | [1, 0, 0]                   |
-| 1 | 0 | Falso              | matriz[1,0] = 0 | [0, -, -]                   |
-| 1 | 1 | Verdadero          | matriz[1,1] = 1 | [0, 1, -]                   |
-| 1 | 2 | Falso              | matriz[1,2] = 0 | [0, 1, 0]                   |
-| 2 | 0 | Falso              | matriz[2,0] = 0 | [0, -, -]                   |
-| 2 | 1 | Falso              | matriz[2,1] = 0 | [0, 0, -]                   |
-| 2 | 2 | Verdadero          | matriz[2,2] = 1 | [0, 0, 1]                   |
+|-| elementof | elementoc | Condición (f == c) | Valor asignado | Elaboración de la matriz |
+|-|---|---|--------------------|----------------|-----------------------------|
+|-| 0 | 0 | Verdadero          | matriz[0,0] = 1 | [1, -, -]                   |
+|-| 0 | 1 | Falso              | matriz[0,1] = 0 | [1, 0, -]                   |
+|fila 0| 0 | 2 | Falso              | matriz[0,2] = 0 | [1, 0, 0]                   |
+|-| 1 | 0 | Falso              | matriz[1,0] = 0 | [0, -, -]                   |
+|-| 1 | 1 | Verdadero          | matriz[1,1] = 1 | [0, 1, -]                   |
+|fila 1| 1 | 2 | Falso              | matriz[1,2] = 0 | [0, 1, 0]                   |
+|-| 2 | 0 | Falso              | matriz[2,0] = 0 | [0, -, -]                   |
+|-| 2 | 1 | Falso              | matriz[2,1] = 0 | [0, 0, -]                   |
+|fila 2| 2 | 2 | Verdadero          | matriz[2,2] = 1 | [0, 0, 1]                   |
 
 
 Resultado 
