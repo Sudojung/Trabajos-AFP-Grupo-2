@@ -79,12 +79,12 @@ Suma y Producto de 12/18 y 15/25
 | Operación | Fracción 1 | Fracción 2 | MCD | Resultado | - |
 |-----------|-----------|-----------|-----|-----------|-------------|
 | Entrada | 12/18 | 15/25 | - | - | Fracciones iniciales |
-| Simplificar F1 | MCD(12,18) = 6 | - | 6 | 2/3 | 12÷6=2, 18÷6=3 |
-| Simplificar F2 | - | MCD(15,25) = 5 | 5 | 3/5 | 15÷5=3, 25÷5=5 |
+| Simplificar F1 | MCD(12,18) = 6 | - | 6 | 2/3 | 12/6=2, 18/6=3 |
+| Simplificar F2 | - | MCD(15,25) = 5 | 5 | 3/5 | 15/5=3, 25/5=5 |
 | Listas para operar | **2/3** | **3/5** | - | - | Fracciones simplificadas |
-| SUMA: Numerador | (2×5) + (3×3) = 10 + 9 = 19 | - | - | 19 | Fórmula: (num1×den2) + (num2×den1) |
-| SUMA: Denominador | 3 × 5 = 15 | - | - | 15 | Fórmula: den1 × den2 |
+| SUMA: Numerador | (2×5) + (3x3) = 10 + 9 = 19 | - | - | 19 | Fórmula: (num1×den2) + (num2xden1) |
+| SUMA: Denominador | 3 x 5 = 15 | - | - | 15 | Fórmula: den1 × den2 |
 | Simplificar Suma | MCD(19,15) = 1 | - | 1 | 19/15 | Ya está simplificada |
-| PRODUCTO: Numerador | 2 × 3 = 6 | - | - | 6 | Fórmula: num1 × num2 |
-| PRODUCTO: Denominador | 3 × 5 = 15 | - | - | 15 | Fórmula: den1 × den2 |
-| Simplificar Producto | MCD(6,15) = 3 | - | 3 | 2/5 | 6÷3=2, 15÷3=5 |
+| PRODUCTO: Numerador | 2 x 3 = 6 | - | - | 6 | Fórmula: num1 x num2 |
+| PRODUCTO: Denominador | 3 x 5 = 15 | - | - | 15 | Fórmula: den1 x den2 |
+| Simplificar Producto | MCD(6,15) = 3 | - | 3 | 2/5 | 6/3=2, 15/3=5 |
