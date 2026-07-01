@@ -99,12 +99,12 @@ FinAlgoritmo
 | Acción | dia1 | mes1 | año1 | dia2 | mes2 | año2 | Intentos | maxInt | Condición | Resultado |
 |--------|------|------|------|------|------|------|----------|--------|-----------|-----------|
 | Sistema genera límite | - | - | - | - | - | - | 0 | **3** | - | Límite asignado |
-| Pide F1 día | 12 | - | - | - | - | - | 0 | 3 | dia1 ≠ 0 | Continúa |
+| Pide F1 día | 12 | - | - | - | - | - | 0 | 3 | dia1 no es 0 | Continúa |
 | Completa F1 | 12 | 5 | 2021 | - | - | - | 0 | 3 | - | - |
 | Pide F2 | - | - | - | 8 | 3 | 2021 | 0 | 3 | - | - |
 | Compara fechas | - | - | 2021 | - | - | 2021 | 0 | 3 | mes1 > mes2 |  **F2 anterior** |
 | Incrementa intentos | - | - | - | - | - | - | **1** | 3 | intentos < maxInt | Pide siguiente |
-| Pide siguiente F1 día | 20 | - | - | - | - | - | 1 | 3 | dia1 ≠ 0 | Continúa |
+| Pide siguiente F1 día | 20 | - | - | - | - | - | 1 | 3 | dia1 no es 0 | Continúa |
 | Completa F1 | 20 | 7 | 2022 | - | - | - | 1 | 3 | - | - |
 | Pide F2 | - | - | - | 15 | 9 | 2022 | 1 | 3 | - | - |
 | Compara fechas | - | - | 2022 | - | - | 2022 | 1 | 3 | mes1 < mes2 |  **F1 anterior** |
@@ -120,12 +120,12 @@ FinAlgoritmo
 | Acción | dia1 | mes1 | año1 | dia2 | mes2 | año2 | Intentos | maxInt | Condición | Resultado |
 |--------|------|------|------|------|------|------|----------|--------|-----------|-----------|
 | Sistema genera límite | - | - | - | - | - | - | 0 | **2** | - | Límite asignado |
-| Pide F1 día | 5 | - | - | - | - | - | 0 | 2 | dia1 ≠ 0 | Continúa |
+| Pide F1 día | 5 | - | - | - | - | - | 0 | 2 | dia1 no es 0 | Continúa |
 | Completa F1 | 5 | 1 | 2020 | - | - | - | 0 | 2 | - | - |
 | Pide F2 | - | - | - | 10 | 1 | 2020 | 0 | 2 | - | - |
 | Compara fechas | - | - | 2020 | - | - | 2020 | 0 | 2 | dia1 < dia2 |  **F1 anterior** |
 | Incrementa intentos | - | - | - | - | - | - | **1** | 2 | intentos < maxInt | Pide siguiente |
-| Pide siguiente F1 día | 25 | - | - | - | - | - | 1 | 2 | dia1 ≠ 0 | Continúa |
+| Pide siguiente F1 día | 25 | - | - | - | - | - | 1 | 2 | dia1 no es 0 | Continúa |
 | Completa F1 | 25 | 6 | 2023 | - | - | - | 1 | 2 | - | - |
 | Pide F2 | - | - | - | 30 | 6 | 2023 | 1 | 2 | - | - |
 | Compara fechas | - | - | 2023 | - | - | 2023 | 1 | 2 | dia1 < dia2 |  **F1 anterior** |
