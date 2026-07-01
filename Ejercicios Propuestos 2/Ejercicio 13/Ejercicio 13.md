@@ -70,6 +70,5 @@ FinAlgoritmo
 | 20 | 0 | Par | sumaPar = 90 + 20 | **110** | - | 100 |
 
 **Resultados:**
-- Rango: del 1 al 20
 - Suma PARES (2+4+6+8+10+12+14+16+18+20) = **110**
 - Suma IMPARES (1+3+5+7+9+11+13+15+17+19) = **100**
