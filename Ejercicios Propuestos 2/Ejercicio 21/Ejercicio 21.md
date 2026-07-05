@@ -1,4 +1,4 @@
-#Ejercicio 21:
+# Ejercicio 21:
 
 Elabore un programa que lea un número entero y escriba el número resultante de invertir sus cifras.
 
