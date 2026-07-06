@@ -36,3 +36,14 @@ Algoritmo Divisor
     Escribir "El máximo común divisor es: ", primero
 
 FinAlgoritmo
+
+# Prueba de Escritorio:
+
+| primero | segundo | Condición | Acción |
+|---:|---:|---|---|
+| 49 | 70 | 49 > 70 es falso | segundo = 70 - 49 = 21 |
+| 49 | 21 | 49 > 21 es verdadero | primero = 49 - 21 = 28 |
+| 28 | 21 | 28 > 21 es verdadero | primero = 28 - 21 = 7 |
+| 7 | 21 | 7 > 21 es falso | segundo = 21 - 7 = 14 |
+| 7 | 14 | 7 > 14 es falso | segundo = 14 - 7 = 7 |
+| 7 | 7 | primero = segundo | Termina el programa |
