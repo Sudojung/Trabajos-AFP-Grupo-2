@@ -7,7 +7,7 @@ una pirámide de n filas que responda al siguiente esquema:
 
 # Algoritmo:
 
-    Algoritmo PiramideNumeros
+Algoritmo PiramideNumeros
     
     Definir n, i, j, val Como Entero
     Escribir "Ingrese un numero entero positivo n:"
