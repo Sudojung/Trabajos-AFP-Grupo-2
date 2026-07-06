@@ -6,8 +6,7 @@ una pirámide de n filas que responda al siguiente esquema:
 <img width="476" height="209" alt="image" src="https://github.com/user-attachments/assets/d56fc2a5-1ffc-467d-bb25-3e6a80453be2" />
 
 # Algoritmo:
- 
-    
+
     Algoritmo PiramideNumeros
     
     Definir n, i, j, val Como Entero
