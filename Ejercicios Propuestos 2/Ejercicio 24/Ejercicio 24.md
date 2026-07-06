@@ -7,8 +7,11 @@ la terna del Fibonacci anterior al número, el número y el siguiente número Fi
 
 # Algoritmo:
 
+
 // Función para determinar si lo que ponemos es primo o no
+
 Funcion es_primo <- VerificarPrimo(num)
+
     Definir es_primo Como Logico
     Definir i Como Entero
     es_primo <- Verdadero
@@ -24,9 +27,12 @@ Funcion es_primo <- VerificarPrimo(num)
             FinSi
         FinPara
     FinSi
+    
 FinFuncion
 
+
 Algoritmo FibonacciPrimo
+
     Definir numero_ingresado, a, b, c, siguiente Como Entero
     
     Escribir "Ingrese un numero natural primo:"
@@ -55,6 +61,7 @@ Algoritmo FibonacciPrimo
             Escribir "El numero ", numero_ingresado, " es primo, pero NO es un numero Fibonacci."
         FinSi
     FinSi
+    
 FinAlgoritmo
 
 
