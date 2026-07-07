@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Función equivalente al SubProceso CalcularFactorial
+// Función 
 double CalcularFactorial(int numero) {
     double res = 1.0;
     
@@ -16,7 +16,6 @@ double CalcularFactorial(int numero) {
     return res;
 }
 
-// Algoritmo principal
 int main() {
     int N, K;
     double porcentaje_p, p, q, combinatoria, prob;
@@ -51,7 +50,6 @@ int main() {
         
         combinatoria = factN / (factK * factNK);
         
-        // Se usa pow(base, exponente) para elevar un número en C++
         prob = combinatoria * pow(p, K) * pow(q, (N - K));
         
         cout << K << "       |   " << prob << endl;
