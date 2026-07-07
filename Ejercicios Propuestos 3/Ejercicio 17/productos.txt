@@ -1,0 +1,6 @@
+P001 Laptop 3500
+P002 Mouse 80
+P003 Teclado 150
+P004 Monitor 1200
+P005 Impresora 650
+P006 USB 45
