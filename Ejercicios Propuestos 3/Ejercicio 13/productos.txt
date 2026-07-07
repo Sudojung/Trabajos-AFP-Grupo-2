@@ -1,0 +1,5 @@
+Laptop 3500
+Mouse 80
+Teclado 150
+Monitor 1200
+USB 45
