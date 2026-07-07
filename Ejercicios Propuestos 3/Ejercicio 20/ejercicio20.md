@@ -7,96 +7,86 @@ Sistema de calificaciones con archivos: Leer notas de estudiantes desde dos arch
 INICIO
 
 ```
-Definir nombre Como Cadena
-Definir nota1, nota2, nota3 Como Real
-Definir i, j, cantidadA, cantidadB, tercioA, tercioB Como Entero
-Definir nombresA, nombresB Como Cadena
-Definir promediosA, promediosB Como Real
-Definir tempProm Como Real
-Definir tempNombre Como Cadena
+    Crear listas vacías:
+        nombresA
+        promediosA
+        nombresB
+        promediosB
 
-' --- Lectura y cálculo de promedios - Grupo A ---
-cantidadA <- 0
-Abrir Archivo "grupoA.txt" Para Lectura
-Mientras No FinDeArchivo("grupoA.txt") Hacer
-    Leer Archivo "grupoA.txt", nombre, nota1, nota2, nota3
-    nombresA[cantidadA] <- nombre
-    promediosA[cantidadA] <- (nota1 + nota2 + nota3) / 3
-    cantidadA <- cantidadA + 1
-FinMientras
-Cerrar Archivo "grupoA.txt"
+    ABRIR archivo "grupoA.txt" EN modo lectura
 
-' --- Lectura y cálculo de promedios - Grupo B ---
-cantidadB <- 0
-Abrir Archivo "grupoB.txt" Para Lectura
-Mientras No FinDeArchivo("grupoB.txt") Hacer
-    Leer Archivo "grupoB.txt", nombre, nota1, nota2, nota3
-    nombresB[cantidadB] <- nombre
-    promediosB[cantidadB] <- (nota1 + nota2 + nota3) / 3
-    cantidadB <- cantidadB + 1
-FinMientras
-Cerrar Archivo "grupoB.txt"
+    MIENTRAS existan datos en "grupoA.txt" HACER
+        Leer nombre, nota1, nota2, nota3
 
-' --- Ordenar Grupo A de mayor a menor promedio (burbuja) ---
-Para i <- 0 Hasta cantidadA - 2 Hacer
-    Para j <- 0 Hasta cantidadA - 2 - i Hacer
-        Si promediosA[j] < promediosA[j+1] Entonces
-            tempProm <- promediosA[j]
-            promediosA[j] <- promediosA[j+1]
-            promediosA[j+1] <- tempProm
-            tempNombre <- nombresA[j]
-            nombresA[j] <- nombresA[j+1]
-            nombresA[j+1] <- tempNombre
-        FinSi
-    Fin Para
-Fin Para
+        promedio = (nota1 + nota2 + nota3) / 3
 
-' --- Ordenar Grupo B de mayor a menor promedio (burbuja) ---
-Para i <- 0 Hasta cantidadB - 2 Hacer
-    Para j <- 0 Hasta cantidadB - 2 - i Hacer
-        Si promediosB[j] < promediosB[j+1] Entonces
-            tempProm <- promediosB[j]
-            promediosB[j] <- promediosB[j+1]
-            promediosB[j+1] <- tempProm
-            tempNombre <- nombresB[j]
-            nombresB[j] <- nombresB[j+1]
-            nombresB[j+1] <- tempNombre
-        FinSi
-    Fin Para
-Fin Para
+        Guardar nombre en nombresA
+        Guardar promedio en promediosA
+    FIN MIENTRAS
 
-' --- Escribir archivos ordenados por mérito ---
-Abrir Archivo "grupoA_ordenado.txt" Para Escritura
-Para i <- 0 Hasta cantidadA - 1 Hacer
-    Escribir Archivo "grupoA_ordenado.txt", nombresA[i], promediosA[i]
-Fin Para
-Cerrar Archivo "grupoA_ordenado.txt"
+    CERRAR archivo "grupoA.txt"
 
-Abrir Archivo "grupoB_ordenado.txt" Para Escritura
-Para i <- 0 Hasta cantidadB - 1 Hacer
-    Escribir Archivo "grupoB_ordenado.txt", nombresB[i], promediosB[i]
-Fin Para
-Cerrar Archivo "grupoB_ordenado.txt"
 
-' --- Calcular tercio superior de cada grupo ---
-tercioA <- cantidadA / 3
-tercioB <- cantidadB / 3
+    ABRIR archivo "grupoB.txt" EN modo lectura
 
-Abrir Archivo "tercioSuperior.txt" Para Escritura
+    MIENTRAS existan datos en "grupoB.txt" HACER
+        Leer nombre, nota1, nota2, nota3
 
-Escribir Archivo "tercioSuperior.txt", "-- Tercio Superior Grupo A --"
-Para i <- 0 Hasta tercioA - 1 Hacer
-    Escribir Archivo "tercioSuperior.txt", nombresA[i], promediosA[i]
-Fin Para
+        promedio = (nota1 + nota2 + nota3) / 3
 
-Escribir Archivo "tercioSuperior.txt", "-- Tercio Superior Grupo B --"
-Para i <- 0 Hasta tercioB - 1 Hacer
-    Escribir Archivo "tercioSuperior.txt", nombresB[i], promediosB[i]
-Fin Para
+        Guardar nombre en nombresB
+        Guardar promedio en promediosB
+    FIN MIENTRAS
 
-Cerrar Archivo "tercioSuperior.txt"
+    CERRAR archivo "grupoB.txt"
 
-Escribir "Proceso finalizado. Archivos generados: grupoA_ordenado.txt, grupoB_ordenado.txt y tercioSuperior.txt"
+
+    ORDENAR nombresA y promediosA de mayor a menor según promedio
+
+    ORDENAR nombresB y promediosB de mayor a menor según promedio
+
+
+    ABRIR archivo "grupoA_ordenado.txt" EN modo escritura
+
+    PARA cada estudiante del Grupo A HACER
+        Escribir nombre y promedio en "grupoA_ordenado.txt"
+    FIN PARA
+
+    CERRAR archivo "grupoA_ordenado.txt"
+
+
+    ABRIR archivo "grupoB_ordenado.txt" EN modo escritura
+
+    PARA cada estudiante del Grupo B HACER
+        Escribir nombre y promedio en "grupoB_ordenado.txt"
+    FIN PARA
+
+    CERRAR archivo "grupoB_ordenado.txt"
+
+
+    tercioA = cantidad de estudiantes del Grupo A / 3
+    tercioB = cantidad de estudiantes del Grupo B / 3
+
+
+    ABRIR archivo "tercioSuperior.txt" EN modo escritura
+
+    Escribir "Tercio Superior Grupo A"
+
+    PARA i desde 0 hasta tercioA - 1 HACER
+        Escribir nombresA[i] y promediosA[i]
+    FIN PARA
+
+    Escribir "Tercio Superior Grupo B"
+
+    PARA i desde 0 hasta tercioB - 1 HACER
+        Escribir nombresB[i] y promediosB[i]
+    FIN PARA
+
+    CERRAR archivo "tercioSuperior.txt"
+
+
+    Mostrar "Proceso finalizado. Archivos generados correctamente."
+
 ```
 
 FIN
