@@ -39,3 +39,14 @@ print("--------------------------------------------------")
 
 liberar_matriz_dinamica(mi_matriz)
 print("Memoria dinámica liberada correctamente.")
+
+# --------------------------------------------------
+# NOTA:
+# En Python no existen los apuntadores o dobles apuntadores (int**) como en C o C++.
+# La matriz dinámica se implementa mediante una lista de listas, que permite crear
+# estructuras de tamaño variable de forma automática. Además, Python administra la
+# memoria con un recolector de basura (Garbage Collector), por lo que no es necesario
+# liberar la memoria manualmente. La función liberar_matriz_dinamica() se incluye
+# únicamente para mantener la misma estructura lógica del algoritmo desarrollado
+# originalmente en PSeInt.
+# --------------------------------------------------
