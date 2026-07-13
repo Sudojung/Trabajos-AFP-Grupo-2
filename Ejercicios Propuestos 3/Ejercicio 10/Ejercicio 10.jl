@@ -1,25 +1,23 @@
-print("Ingrese el tamaño del vector: ")
-n = parse(Int, readline())
+cantidad = 0
+i = 0
 
-println("Pediendo memoria para el vector (Simulando new)")
-vector = Vector{Int}(undef, n) 
+println("Ingrese la cantidad de elementos del vector:")
+cantidad = parse(Int, readline())
 
-println("VECTOR: ")
-for i in 0:(n - 1)
-    print("Valor para la posición ", i, ": ")
-    vector[i + 1] = parse(Int, readline())
+# Crear vector dinámico
+puntero = Vector{Int}(undef, cantidad)
+
+println("Ingrese los elementos:")
+for i = 1:cantidad
+    println("Elemento ", i - 1, ":")
+    puntero[i] = parse(Int, readline())
 end
 
-println("\nVector dinámico en memoria:")
-for i in 0:(n - 1)
-    print(vector[i + 1], " ")
+println("Elementos del vector dinámico:")
+for i = 1:cantidad
+    print(puntero[i], " ")
 end
-println("\n")
+println()
 
-println("Liberando la memoria del vector (Simulando delete)")
-
-# En Julia, para liberar el "apuntador", vaciamos el vector 
-empty!(vector) 
-vector = nothing 
-
-println("¡Memoria liberada!")
+# Liberar el vector
+puntero = nothing
