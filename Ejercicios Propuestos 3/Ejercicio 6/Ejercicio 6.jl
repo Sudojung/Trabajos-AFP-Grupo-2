@@ -13,7 +13,7 @@ end
 # Bubble Sort
 for i in 0:(n - 2)
     for j in 0:(n - i - 2)
-        # TRUCO: sumamos 1 a los índices 'j' y 'j+1' para adaptarlos a Julia
+        #  sumamos 1 a los índices j y j+1 para adaptarlos a Julia
         if cadena[j + 1] > cadena[(j + 1) + 1]
             aux = cadena[j + 1]
             cadena[j + 1] = cadena[(j + 1) + 1]
