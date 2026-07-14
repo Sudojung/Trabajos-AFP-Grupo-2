@@ -58,8 +58,8 @@ FinAlgoritmo
 | 1 | 5 | 4 | (5-5)² + (4-4)² = 0+0 = **0** |  SI | (-5+5)² + (4-4)² = 0+0 = **0** |  SI | **SI** | **1** | ¡El punto está dentro! |
 | 2 | 7 | 4 | (7-5)² + (4-4)² = 4+0 = **4** |  SI (frontera) | (-5+7)² + (4-4)² = 4+0 = **4** |  SÍ | **SI** | **2** | ¡El punto está dentro! |
 | 3 | 3 | 4 | (3-5)² + (4-4)² = 4+0 = **4** |  SI (frontera) | (-5+3)² + (4-4)² = 4+0 = **4** |  SÍ | **SI** | **3** | ¡El punto está dentro! |
-| 4 | 8 | 4 | (8-5)² + (4-4)² = 9+0 = **9** |  NO | (-5+8)² + (4-4)² = 9+0 = **9** |  SÍ (frontera) | **SI** | **4** | ¡El punto está dentro! |
+| 4 | 8 | 4 | (8-5)² + (4-4)² = 9+0 = **9** |  NO | (8+5)² + (4-4)² = 169 + 0 = **169** |  NO | **NO** | **3** | El punto está fuera. |
 | 5 | 10 | 4 | (10-5)² + (4-4)² = 25+0 = **25** |  NO | (-5+10)² + (4-4)² = 25+0 = **25** |  NO | **NO** | 4 | El punto está fuera. |
 | 6 | 5 | 6 | (5-5)² + (6-4)² = 0+4 = **4** |  SI (frontera) | (-5+5)² + (6-4)² = 0+4 = **4** |  SI | **SI** | **5** | ¡El punto está dentro! |
 
-**Resultado:** Total de puntos dentro de las circunferencias: **5**
+**Resultado:** Total de puntos dentro de las circunferencias: **4**
