@@ -1,4 +1,4 @@
-# Ejercicio 7:
+# Ejercicio 8:
 
 Modifique el programa anterior para que permita un número máximo de intentos (dado por la 
 constante MAXINTENTOS, superados los cuales terminará imprimiendo el mensaje "Lo siento, ha 
