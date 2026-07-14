@@ -2,12 +2,15 @@
 
 La media armónica de n números está definida por:
 
+<img width="281" height="158" alt="image" src="https://github.com/user-attachments/assets/25317f85-61aa-4128-9ad4-157c371c5ef5" />
+
 
 y la media geométrica por:
 
+<img width="415" height="121" alt="image" src="https://github.com/user-attachments/assets/8b6d293f-b91c-44c6-be69-05e7c5877fd7" />
+
 
 Hacer un algoritmo para calcular la diferencia de la media armónica y la media geometrica de M números enteros positivos.
-
 
 # Algoritmo:
 
